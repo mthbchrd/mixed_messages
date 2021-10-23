@@ -1,3 +1,1 @@
-let messages = [
-    ""
-]
+import * as lines from "lines.js";
