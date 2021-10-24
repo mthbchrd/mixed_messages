@@ -1,4 +1,6 @@
-export let berengersLines = [
+export const { berengersLines, jeansLines };
+
+const berengersLines = [
     "I get so little spare time!",
     "It's too late now.",
     "How do you mean?",
@@ -41,7 +43,7 @@ export let berengersLines = [
     "I've got talent, me?"
 ]
 
-export let jeansLines = [
+const jeansLines = [
     "You contradict yourself What oppresses you - solitude, or the company of others? You consider yourself a thinker, yet you're devoid of logic.",
     "On the contrary. Nothing could be more natural, and the proof is that people go On living.",
     "The dead don't exist, there's no getting away from that! Ah! Ah ...! [He gives a huge laugh.] Yet you're oppressed by them, too? How can you be oppressed by something that doesn't exist?",

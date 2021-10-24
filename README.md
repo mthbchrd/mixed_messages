@@ -5,11 +5,10 @@ A Codecademy's Portfolio Project
 --------------------------------
 Here's a Codecademy's Portfolio Project called *Mixed Message*. The goal of this portfolio project is to practice some JavaScript, Git and MarkDown fundamentals.
 
-:speech_balloon:
-:left_speech_bubble:
-
 ### General Information
 I decided to implement a script that generates an absurd discussion between some of Ionesco's Rhinoceros play. 
+:speech_balloon:
+:left_speech_bubble:
 
 ### How does it work?
 * `lines.js` contains an array for each caracter and each array contains all of the lines of a character;
