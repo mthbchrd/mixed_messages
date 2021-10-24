@@ -1,14 +1,17 @@
-import { berengersLines, jeansLines } from "./lines";
+import { berengersLines, jeansLines } from "./lines.js";
+
 
 // First, we declare a function that will output character lines instead of writing repeating code...
 const spitLines = (characterIndex) => {
-    let randomIndex;
-    while (!randomIndex || outputtedLines[characterIndex].includes(randomIndex)) {
-        randomIndex = Math.floor(Math.random() * charactersLines[characterIndex].length);
+    if (outputtedLines[characterIndex].length < charactersLines[characterIndex].length) {
+        let randomIndex;
+        while (!randomIndex || outputtedLines[characterIndex].includes(randomIndex)) {
+            randomIndex = Math.floor(Math.random() * charactersLines[characterIndex].length);
+        }
+        outputtedLines[characterIndex].push(randomIndex);
+        console.log(`${characters[characterIndex]}: ${charactersLines[characterIndex][randomIndex]}`);
     }
-    outputtedLines[characterIndex].push(randomIndex);
-    console.log(`${characters[characterIndex]}: ${charactersLines[characterIndex][randomIndex]}`);
-    characterIndex === 0 ? characterIndex = 1 : characterIndex = 0;
+    currentIndex === 0 ? currentIndex = 1 : currentIndex = 0;
 }
 
 // Theses arrays store the characters and their lines. The order must be the same in this array as the charactersLines array
@@ -23,7 +26,7 @@ let outputtedLines = [[], []];
 let currentIndex = Math.round(Math.random());
 
 // Outputting lines to the console
-while (outputtedLines[0].length() <= charactersLines[0].length() || outputtedLines[1].length() <= charactersLines[1].length()) {
+while (outputtedLines[0].length <= charactersLines[0].length || outputtedLines[1].length <= charactersLines[1].length) {
     spitLines(currentIndex);
 }
 

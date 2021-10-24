@@ -1,5 +1,3 @@
-export const { berengersLines, jeansLines };
-
 const berengersLines = [
     "I get so little spare time!",
     "It's too late now.",
@@ -87,3 +85,5 @@ const jeansLines = [
     "Oh, a rhinoceros!",
     "It's rushing straight ahead, brushing up against the shop windows."
 ]
+
+export { berengersLines, jeansLines };
