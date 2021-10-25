@@ -5,7 +5,7 @@ A Codecademy's Portfolio Project
 Here's a Codecademy's Portfolio Project called *Mixed Message*. The goal of this portfolio project is to practice some JavaScript, Git and MarkDown fundamentals.
 
 ### General Information
-I decided to implement a script that generates an absurd discussion between some of Ionesco's Rhinoceros play. 
+I decided to implement a script that generates an absurd discussion between some of Ionesco's Rhinoceros play characters. 
 :speech_balloon:
 :left_speech_bubble:
 
