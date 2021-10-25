@@ -1,8 +1,7 @@
 Mixed Messages
 ==============
-
 A Codecademy's Portfolio Project
---------------------------------
+
 Here's a Codecademy's Portfolio Project called *Mixed Message*. The goal of this portfolio project is to practice some JavaScript, Git and MarkDown fundamentals.
 
 ### General Information
