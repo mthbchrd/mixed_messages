@@ -32,9 +32,13 @@ $ node main.js
 
 ### Features
 #### Implemented
+* A whole random (and absurd) conversation is generated and logged into the console each time you run the script;
 
 #### Development ideas
-
+* Use lodash's shuffle on an array of charactersLines indexes so every line can be outputted without an infinite loop and without the need for a counter that stops at 80% of accessible charactersLines
+* Add a setTimeout with a random time so lines are logged to the console a bit more naturally like a chat...
+* Do something similar by splitting charactersLines word by word and logging the words to the console one by one, like a natural conversation;
+* Integrate the whole thing in a single web page for outputting the result in something more friendly than a terminal/console;
 
 ### License
 GNU GPLv3
