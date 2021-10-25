@@ -1,4 +1,8 @@
 {
     "main": "main.js",
-    "type":"module"
+    "type": "module",
+    "dependencies": {
+        "lodash": "^4.17.21",
+        "lodash.shuffle": "^4.2.0"
+    }
 }

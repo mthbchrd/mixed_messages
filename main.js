@@ -11,11 +11,11 @@ const spitLines = (characterIndex) => {
         outputtedLines[characterIndex].push(randomIndex);
         console.log(`${characters[characterIndex]}: ${charactersLines[characterIndex][randomIndex]}`);
     }
-    currentIndex === 0 ? currentIndex = 1 : currentIndex = 0;
+    currentCharacterIndex === 0 ? currentCharacterIndex = 1 : currentCharacterIndex = 0;
 }
 
 // Theses arrays store the characters and their lines. The order must be the same in this array as the charactersLines array
-let characters = ["Berenger", "Jean"];
+let characters = ["BERENGER", "JEAN"];
 let charactersLines = [berengersLines, jeansLines];
 
 // This next array stores two nested arrays, each contaning the indexes of the lines already outputed so they're not outputted twice. 
@@ -23,11 +23,18 @@ let charactersLines = [berengersLines, jeansLines];
 let outputtedLines = [[], []];
 
 // Choosing randomly the first character to output a line
-let currentIndex = Math.round(Math.random());
+let currentCharacterIndex = Math.round(Math.random());
+
+// The next two variables ensure the script ends when about 80% of both charactersLines arrays.
+// These had to be implemented after the tests on the first version of the script revealed it was getting in a near infinite loop when 
+// most of the charactersLines array had been outputted...
+let counter = 0;
+let max = 0.8 * charactersLines[0].length * 2;
 
 // Outputting lines to the console
-while (outputtedLines[0].length <= charactersLines[0].length || outputtedLines[1].length <= charactersLines[1].length) {
-    spitLines(currentIndex);
+while (counter <= max && (outputtedLines[0].length <= charactersLines[0].length || outputtedLines[1].length <= charactersLines[1].length)) {
+    spitLines(currentCharacterIndex);
+    counter++;
 }
 
 // We end the script and dialogue the same way Act I of the plys ends
